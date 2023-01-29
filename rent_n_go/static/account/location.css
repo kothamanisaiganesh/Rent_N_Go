@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(11, 11, 11);
+}
+
+/* Bottom left text */
+#top-left {
+    position: absolute;
+    bottom: 300px;
+    left: 450px;
+}
+
+#you:hover {
+    background-color: aliceblue;
+}
+
+label {
+    display: block;
+    font: 1.5rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
