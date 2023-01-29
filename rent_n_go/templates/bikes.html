@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style media="screen">
+    .en {
+
+
+  position: absolute;
+  bottom: 450px;
+  left: -400px;
+
+
+}
+
+#en7 {
+  position: absolute;
+  bottom: 450px;
+  left: -400px;
+
+}
+
+#en1 {
+  position: absolute;
+  bottom: 150px;
+  left: 1000px;
+  font-family: serif,'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#en2 {
+  position: absolute;
+  bottom: 50px;
+  left: 1000px;
+}
+
+
+#en3 {
+  position: absolute;
+  bottom: 30px;
+  left: 1010px;
+}
+
+#en4 {
+  position: absolute;
+  bottom: 10px;
+  left: 1010px;
+
+}
+
+#en5 {
+  position: absolute;
+  bottom: 90px;
+  left: 1500px;
+
+}
+
+#en6 {
+  position: absolute;
+  bottom: 30px;
+  left: 1500px;
+
+}
+
+
+.pul {
+
+
+  position: absolute;
+  bottom: 230px;
+  left: -400px;
+
+
+}
+
+#pul7 {
+  position: absolute;
+  bottom: 250px;
+  left: -400px;
+
+}
+
+#pul1 {
+  position: absolute;
+  bottom: 100px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#pul2 {
+  position: absolute;
+  bottom: -10px;
+  left: 1000px;
+}
+
+
+#pul3 {
+  position: absolute;
+  bottom: -30px;
+  left: 1010px;
+}
+
+#pul4 {
+  position: absolute;
+  bottom: -50px;
+  left: 1010px;
+
+}
+
+#pul5 {
+  position: absolute;
+  bottom: 10px;
+  left: 1500px;
+
+}
+
+#pul6 {
+  position: absolute;
+  bottom: -50px;
+  left: 1500px;
+
+}
+
+.nios {
+
+
+  position: absolute;
+  bottom: -100px;
+  left: -400px;
+
+
+}
+
+#nios7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#nios1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#nios2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#nios3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#nios4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#nios5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#nios6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+
+.amaze {
+
+
+  position: absolute;
+  bottom: -370px;
+  left: -400px;
+
+
+}
+
+#amaze7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#amaze1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#amaze2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#amaze3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#amaze4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#amaze5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#amaze6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+.polo {
+
+
+  position: absolute;
+  bottom: -650px;
+  left: -400px;
+
+
+}
+
+#polo7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#polo1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#polo2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#polo3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#polo4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#polo5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#polo6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+.breeza {
+
+
+  position: absolute;
+  bottom: -950px;
+  left: -400px;
+
+
+}
+
+#breeza7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#breeza1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#breeza2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#breeza3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#breeza4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#breeza5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#breeza6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+.nexon {
+
+
+  position: absolute;
+  bottom: -1200px;
+  left: -400px;
+
+
+}
+
+#nexon7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#nexon1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#nexon2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#nexon3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#nexon4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#nexon5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#nexon6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+.venue {
+
+
+  position: absolute;
+  bottom: -1450px;
+  left: -400px;
+
+
+}
+
+#venue7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#venue1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: serif,'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#venue2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#venue3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#venue4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#venue5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#venue6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+
+.end {
+
+
+  position: absolute;
+  bottom: -1700px;
+  left: -400px;
+
+
+}
+
+#end7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#end1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#end2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#end3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#end4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#end5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#end6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+
+
+.cry {
+
+
+  position: absolute;
+  bottom: -2000px;
+  left: -400px;
+
+
+}
+
+#cry7 {
+  position: absolute;
+  bottom: 100px;
+  left: -400px;
+
+}
+
+#cry1 {
+  position: absolute;
+  bottom: 140px;
+  left: 1000px;
+  font-family: 'serif', 'acme', serif;
+  font-size: 30px;
+}
+
+#cry2 {
+  position: absolute;
+  bottom: 40px;
+  left: 1000px;
+}
+
+
+#cry3 {
+  position: absolute;
+  bottom: 20px;
+  left: 1010px;
+}
+
+#cry4 {
+  position: absolute;
+  bottom: 0px;
+  left: 1010px;
+
+}
+
+#cry5 {
+  position: absolute;
+  bottom: 60px;
+  left: 1500px;
+
+}
+
+#cry6 {
+  position: absolute;
+  bottom: 0px;
+  left: 1500px;
+
+}
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Blinker">
+</head>
+
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light  sticky-top" style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="{% static "account/images/rentngo.jpeg" %}" width="43px" height="43px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'index' %}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li style="float:right"><a class="active" href="#about">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li class="nav-item active">
+                        <span>
+                          <img src="data:image/png;base64,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" width="43px" height="43px" alt="">
+                        </span>
+                    </li>
+                    <li class="topnav-right active" style="float:right">
+
+                        <a class="nav-link topnav-right"  href="">{{ user.username }}<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'logout' %}">LogOut<span class="sr-only"></span></a>
+                    </li>
+
+
+                </ul>
+
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div>
+
+        <p>
+            <br>
+
+        </p>
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="col-md-12 en">
+
+                    <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Royal-Enfield-Classic-350-130120211558.png"
+                        width="230px" height="230px">
+
+
+
+
+                    <h6 id="en1">Royal Enfield <br>Classic 350</h6>
+
+
+                    <ul id="en2">
+                        <li>350 cc</li>
+                        <li>13-13.5 L</li>
+                        <li><b>35</b> Mileage</li>
+                    </ul>
+                    <h6 id="en3"> 2k kms driven</h6>
+                    <br>
+                    <h6 id="en4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.5 (33)</span>
+                    </h6>
+
+                    <h3 id="en5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 699
+                    </h3>
+
+
+
+
+
+
+                    <form action="{% url 'pay11' %}">
+                        <div class="bttn"  id="en6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 pul">
+
+                    <img src="https://imgd.aeplcdn.com/476x268/n/cw/ec/114277/pulsar-150-right-front-three-quarter-7.png?isig=0"
+                        width="230px" height="230px">
+
+
+
+
+                    <h6 id="pul1">Bajaj Pulsar</h6>
+
+
+                    <ul id="pul2">
+                        <li>150cc</li>
+                        <li>15 L</li>
+                        <li><b>50</b> Mileage</li>
+                    </ul>
+                    <h6 id="pul3"> 30k kms driven</h6>
+                    <br>
+                    <h6 id="pul4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.8 (66)</span>
+                    </h6>
+
+                    <h3 id="pul5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 349
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay12' %}">
+                        <div class="bttn"  id="pul6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 nios">
+
+                    <img src="https://www.testdriveguru.in/bike/wp-content/uploads/2021/02/Jawa42.jpg" width="230px"
+                        height="230px">
+
+
+
+
+                    <h6 id="nios1">JAWA Perak</h6>
+
+
+                    <ul id="nios2">
+                        <li>350cc</li>
+                        <li>14L</li>
+                        <li><b>37.5</b> Mileage</li>
+                    </ul>
+                    <h6 id="nios3"> 13k kms driven</h6>
+                    <br>
+                    <h6 id="nios4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.2 (36)</span>
+                    </h6>
+
+                    <h3 id="nios5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 649
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay13' %}">
+                        <div class="bttn"  id="nios6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 amaze">
+
+                    <img src="https://heromotored.com/wp-content/uploads/2020/10/02.Xpulse-200_ABWT_White-3-4th-Front-1.jpg"
+                        width="200px" height="230px">
+
+
+
+
+                    <h6 id="amaze1">Hero Xpulse</h6>
+
+
+                    <ul id="amaze2">
+                        <li>300cc</li>
+                        <li>13.5L</li>
+                        <li><b>36</b> Mileage</li>
+                    </ul>
+                    <h6 id="amaze3"> 7k kms driven</h6>
+                    <br>
+                    <h6 id="amaze4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">3.8 (15)</span>
+                    </h6>
+
+                    <h3 id="amaze5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 599
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay14' %}">
+                        <div class="bttn"  id="amaze6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 polo">
+
+                    <img src="https://vespaindia.com/images/The-Vespa-VXL.png" width="200px" height="230px">
+
+
+
+
+                    <h6 id="polo1">Vespa</h6>
+
+
+                    <ul id="polo2">
+                        <li>125cc</li>
+                        <li>7.4L</li>
+                        <li><b>47.7</b> Mileage</li>
+                    </ul>
+                    <h6 id="polo3"> 11k kms driven</h6>
+                    <br>
+                    <h6 id="polo4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.0(20)</span>
+                    </h6>
+
+                    <h3 id="polo5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 549
+                    </h3>
+
+
+
+
+
+
+                    <form action="{% url 'pay15' %}">
+                        <div class="bttn"  id="polo6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 breeza">
+
+                    <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/45481/shine-right-front-three-quarter.jpeg?isig=0"
+                        width="200px" height="230px">
+
+
+
+
+                    <h6 id="breeza1">Honda Shine</h6>
+
+
+                    <ul id="breeza2">
+                        <li>150cc</li>
+                        <li>10.5L</li>
+                        <li><b>55-65</b> Mileage</li>
+                    </ul>
+                    <h6 id="breeza3"> 3k kms driven</h6>
+                    <br>
+                    <h6 id="breeza4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.2(33)</span>
+                    </h6>
+
+                    <h3 id="breeza5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 349
+                    </h3>
+
+
+
+
+
+
+                    <form action="{% url 'pay16' %}">
+                        <div class="bttn"  id="breeza6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 nexon">
+
+                    <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/45481/shine-right-front-three-quarter.jpeg?isig=0"
+                        width="230px" height="230px">
+                    <h4 id="nexon1"></h4>
+
+
+                    <ul id="nexon2">
+                        <li>125cc</li>
+                        <li>5-5.6L</li>
+                        <li><b>64</b> Mileage</li>
+                    </ul>
+                    <h6 id="nexon3"> 6.5k kms driven</h6>
+                    <br>
+                    <h6 id="nexon4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.1(10)</span>
+                    </h6>
+
+                    <h3 id="nexon5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 349
+                    </h3>
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 venue">
+
+                    <img src="https://imgd.aeplcdn.com/360x202/bw/models/tvs-ntorq-125-drum--bs-vi20200928230303.jpg?q=75"
+                        width="200px" height="230px">
+
+
+
+
+                    <h6 id="venue1">TVS Ntorq</h6>
+
+
+                    <ul id="venue2">
+                        <li>125cc</li>
+                        <li>5.8L</li>
+                        <li><b>56.23</b> Mileage</li>
+                    </ul>
+                    <h6 id="venue3"> 6.5k kms driven</h6>
+                    <br>
+                    <h6 id="venue4">
+                        <span> <img
+                                src="
+                                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.1(8)</span>
+                    </h6>
+
+                    <h3 id="venue5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 349
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay18' %}">
+                        <div class="bttn"  id="venue6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 nexon">
+
+                    <img src="data:image/jpeg;base64,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"
+                        width="200px" height="230px">
+
+
+
+
+                    <h6 id="nexon1">Suzuki Access 125</h6>
+
+
+                    <ul id="nexon2">
+                        <li></li>
+                        <li></li>
+                        <li><b></b> </li>
+                    </ul>
+                    <h6 id="nexon3"> 6.5k kms driven</h6>
+                    <br>
+                    <h6 id="nexon4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.1(10)</span>
+                    </h6>
+
+                    <h3 id="nexon5">
+                      <!--  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px">-->
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay17' %}">
+                        <div class="bttn"  id="nexon6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-12 end">
+
+                    <img src="https://imgd.aeplcdn.com/1280x720/bw/ec/39019/Hero-HF-Deluxe-Side-152305.jpg?wm=0&q=100"
+                        width="200px" height="230px">
+
+
+
+
+                    <h6 id="end1">Hero HF Deluxe</h6>
+
+
+                    <ul id="end2">
+                        <li>125cc</li>
+                        <li>9.6L</li>
+                        <li><b>60</b> Mileage</li>
+                    </ul>
+                    <h6 id="end3"> 1200 kms driven</h6>
+                    <br>
+                    <h6 id="end4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.4(21)</span>
+                    </h6>
+
+                    <h3 id="end5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 249
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay19' %}">
+                        <div class="bttn"  id="end6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="row">
+
+                <div class="col-md-12 cry">
+
+                    <img src="data:image/jpeg;base64,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
+                    " width="200px" height="230px">
+
+
+
+
+                    <h6 id="cry1">Honda Activa 125</h6>
+
+
+                    <ul id="cry2">
+                        <li>125 cc</li>
+                        <li>5-5.5 L</li>
+                        <li><b>40</b> Mileage</li>
+                    </ul>
+                    <h6 id="cry3"> 3400 kms driven</h6>
+                    <br>
+                    <h6 id="cry4">
+                        <span> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFTnkZJrixLb3T1FID3463dWSdqxHCczUNw&usqp=CAU"
+                                height="17px" width="17px">4.0(7)</span>
+                    </h6>
+
+                    <h3 id="cry5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                            width="20px" height="20px"> 299
+                    </h3>
+
+
+
+
+
+
+
+                    <form action="{% url 'pay20' %}">
+                        <div class="bttn"  id="cry6">
+                            <button class="btn btn-outline-info">
+
+
+                                <h6>Book Now</h6>
+
+
+
+                            </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+            crossorigin="anonymous"></script>
+        <script>
+            src = "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous" >
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="{% static 'register.js' %}"></script>
+    <style media="screen">
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(11, 11, 11);
+}
+
+/* Bottom left text */
+#top-left {
+  position: absolute;
+  bottom: 20px;
+  left: 310px;
+}
+
+#edhookati{
+  color:Cyan;
+}
+
+.content .bg {
+  background-size: cover;
+  background-position: center; }
+
+.content a {
+  color: #888;
+  text-decoration: underline; }
+
+.content .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.content .forgot-pass {
+  position: relative;
+  top: 2px;
+  font-size: 14px; }
+
+.content .btn-pill {
+  border-radius: 30px; }
+
+.social-login a {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block; }
+  .social-login a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .social-login a:hover {
+    color: #fff; }
+  .social-login a.facebook {
+    background: #3b5998; }
+    .social-login a.facebook:hover {
+      background: #344e86; }
+  .social-login a.twitter {
+    background: #1da1f2; }
+    .social-login a.twitter:hover {
+      background: #0d95e8; }
+  .social-login a.google {
+    background: #ea4335; }
+    .social-login a.google:hover {
+      background: #e82e1e; }
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px; }
+  .control .caption {
+    position: relative;
+    top: .2rem;
+    color: #888; }
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px; }
+
+.control--radio .control__indicator {
+  border-radius: 50%; }
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc; }
+
+.control input:checked ~ .control__indicator {
+  background: #38d39f; }
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #4dd8a9; }
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.9;
+  pointer-events: none; }
+
+.control__indicator:after {
+  font-family: 'icomoon';
+  content: '\e5ca';
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+  color: #fff; }
+
+.control--checkbox .control__indicator:after {
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b; }
+
+.control--checkbox input:disabled:checked ~ .control__indicator {
+  background-color: #7e0cf5;
+  opacity: .2;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+      <br><br>
+      <div class="alert alert-warning">
+  <strong>{{ form.errors }}</strong>
+      </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light  sticky-top" style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="{% static "account/images/rentngo.jpeg" %}" width="43px" height="43px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'index' %}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+
+                </ul>
+
+<!--                </form>                   -->
+            </div>
+        </nav>
+    </div>
+    <div>
+
+        <p>
+            <br>
+
+        </p>
+
+    </div>
+    <div class="container">
+
+        <img src="{% static "account/images/rentngo1.jpeg" %}" width="1080px" height="600px">
+
+
+        <div class="top-right" id="top-left">
+            <form method="POST">
+              {% csrf_token %}
+                <div class="form-row">
+
+                      <div class="col-md-6 form-group ">
+
+
+                                      <label for="username">
+                                          <h5>UserName</h5>
+                                      </label>
+                                      {{ form.username }}
+
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                      <label for="email">
+                                          <h5>Email</h5>
+                                      </label>
+                                      {{ form.email }}
+                                  </div>
+                              </div>
+
+
+
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                      <label for="password">
+                          <h5>Password</h5>
+                      </label>
+                      {{ form.password1 }}
+
+                  </div>
+                    <div class="form-group col-md-6">
+                        <label for="password">
+                            <h5>Confirm Password</h5>
+                        </label>
+                        {{ form.password2 }}
+
+                    </div>
+                </div>
+
+                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="state">
+                                            <h5>Select State</h5>
+                                        </label>
+                                        <select name="meal" id="meal" class="form-control" style="background-color:rgb(255,255,255)"
+                                            onChange="changecat(this.value);">
+                                            <option value="first">Select the State</option>
+                                            <option value="AndhraPradesh">Andhra Pradesh</option>
+                                            <option value="Gujarat">Gujarat</option>
+
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="MadhyaPradesh">Madhya Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="ArunachalPradesh">Arunachal Pradesh</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Maharastra">Maharastra</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-md-6">
+
+                                        <label for="city">
+                                            <h5>Select City</h5>
+                                        </label>
+
+                                        <select name="category" id="category" class="form-control"
+                                            style="background-color:rgb(255,255,255)" ;>
+                                            <option value="" disabled selected>Select City</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                  <div class="d-flex mb-5 align-items-center">
+                    <label class="control control--checkbox mb-0"><span class="caption" id="edhookati"><h6>Customer</h6></span>
+                        {{ form.is_customer }}
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="d-flex mb-5 align-items-center">
+                    <label class="control control--checkbox mb-0"><span class="caption" id="edhookati"><h6>Host</h6></span>
+                        {{ form.is_host }}
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+
+
+
+
+
+                <input href="{% url 'login_view' %}" class="btn btn-info" type="Submit" name="" value="Register">
+
+
+
+        </div>
+    </div>
+
+
+    </form>
+    <div class="container">
+        <img src="{% static 'account/images/rentngo2.jpeg' %}">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous" >
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

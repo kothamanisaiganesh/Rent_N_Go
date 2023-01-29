@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rent N' Go</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="maiin.css">
+    <style media="screen">
+    .top-right {
+  position: absolute;
+  bottom: 280px;
+  left: 775px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: 'decorative';
+}
+
+.container {
+  position: relative;
+  text-align: center;
+
+
+
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.bttn {
+  position: absolute;
+  bottom: 55px;
+  left: 500px;
+  padding: 0px;
+
+}
+
+.last{
+  margin-left: auto;
+}
+nav a:last-child {
+  margin-left: auto;
+}
+
+h6 {
+  color: aliceblue;
+}
+
+#hover:hover {
+  color: rgb(0, 170, 255);
+}
+
+#button:hover {
+  background-color: cornflowerblue;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light  sticky-top" style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="{% static "account/images/rentngo.jpeg" %}" width="43px" height="43px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main1.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pancard.html">My Account<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Bookings<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Go Coins<span class="sr-only"></span></a>
+                    </li>
+                    <li style="float:right"><a class="active" href="#about">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li class="nav-item active">
+                        <span>
+                          <img src="data:image/png;base64,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" width="43px" height="43px" alt="">
+                        </span>
+                    </li>
+                    <li class="topnav-right active" style="float:right">
+
+                        <a class="nav-link topnav-right"  href="">{{ user.username }}<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'logout' %}">LogOut<span class="sr-only"></span></a>
+                    </li>
+
+
+
+
+                </ul>
+
+                </form>
+            </div>
+        </nav>
+
+        <div>
+            <br>
+        </div>
+        <div class="container">
+
+
+            <img src="https://media.istockphoto.com/id/1214033357/photo/summer-car-trip-and-young-family-on-vacation.jpg?s=612x612&w=0&k=20&c=arVJkRgsoS1yfRTnYKQngZJTXkDyxAwA07TKsg7l1qU="
+                height="600px" width="1075px">
+            <div class="top-right" id="top-left">
+                <p>Don't<br>
+                    Dream it.<br>
+                    Drive it.<br>
+
+                </p>
+            </div>
+            <form action="{% url 'dateandtime' %}">
+            <div class="bttn">
+                <button class="btn btn-success">
+
+
+                        <h6>BOOK NOW!</h6>
+
+
+
+                </button>
+
+
+            </div>
+          </form>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                <h3> ABOUT US</h3><br>
+
+
+
+                Rent N' Go is an ongoing start up success story are guiding <br>
+                principles,and humble beginning,revovle around personal,honesty<br>
+                and integrity .We beleive in strenthening our communities one<br>
+                neighbourhood at a time, serving our customers as if they were our <br>
+                family and rewarding hardwork.Wetake an active role in sustainbility,<br>
+                not only because its smart for our bussiness,but itsbecause we believe <br>
+                in making the world a better place for future generations.
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                <h3> GO COINS</h3><br>
+                After every ride based on your performamce <br>
+                will be awarded some GO coins.These coins are<br>
+                converted into money for next ride.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                <h3> EASY RIDES</h3><br>
+                We are available everywhere.Our website has a user-friendly interface which helps the user to check
+                for cars and rent them for the period specified. The main advantage is that user can choose car
+                based on his/her budget.
+
+
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                <h3>WHY CHOOSE US</h3><br>
+                If you want to book directly through a supplier,and not through a brocker- choose Rent N' Go <br>
+                this will give you better flexibility in terms of vehicle choices, rides and discounts.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://media.istockphoto.com/id/594795453/photo/parents-with-children-enjoying-vacation-on-beach.jpg?s=612x612&w=0&k=20&c=DqOznGgjEElEQ8y_cjY74NXIdEUZf2Mz51_w_KuGe3Y="
+                    height="400px" width="550px">
+
+            </div>
+            <div class="col-md-6">
+                <img src="https://media.istockphoto.com/id/1169695989/photo/packing.jpg?s=612x612&w=0&k=20&c=kDBDHNLpSW7cnNDvb81L9aLmXX5hai8jum61QDwzxPM="
+                    height="400px" width="550px">
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+            <br>
+        </p>
+    </div>
+
+    <footer class="text-center text-lg-start  text-muted" style="background-color:rgb(36, 35, 32);">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Rent N' Go
+                        </h6>
+                        <p>
+                            Most successful startup by 3 friends<br>
+                            its is a online facility to book cars<br>
+                            online within few clicks.This system includes<br>
+                            varoius cars, as per the customers order and comfort<br>
+
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Follow Us On
+                        </h6>
+                        <p>
+                            <a href="https://instagram.com/rent_n_go_?igshid=YmMyMTA2M2Y=" class="text-reset"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                                    width="20px" height="20px"> Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/login" class="text-reset"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/800px-Twitter-logo.svg.png"
+                                    width="20px" height="20px"> Twitter</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/" class="text-reset"> <img
+                                    src="data:image/jpeg;base64,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"
+                                    width="20px" height="20px"> Facebook</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/" class="text-reset"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX/AAD/////u7v/6+v/0ND/aWn/mZn/zc3/9fX/h4f/5ub/+Pj/tbX/t7f/oKD/ODj/Kir/3d3/wMD/MzP/UVH/1dX/yMj/qan/lJT/TU3/gID/Fxf/PT3/eHj/Dg7/jY3/ZWX/Q0P/XV3/IiL/cXH/q6v/X1//eXnZjuaVAAAE20lEQVR4nO2d63aiQAyAOyKgXAVF0Lbrtbvv/4YLZ9didUDQQEjI9689RyffwcCQub0p7rxhB9A5YkgfMaSPGNJHDOkjhvQRQ/qIIX3EkD5iSB8xpI8Y0kcM6SOG9BFD+oghfcSQPmJIHzGkjxi+jHEhml4Tff+/6wBeMXTdWU6SrD0/DQIry3Z709yEYbh4e45F/tmNae53WWYFQep76yQpmnDd3gxdw4mi2LPm27O5OZzenzRpy/vpsDHP27nlxVHkGO18Gxo6dmx9HjfLvpzqeF9ujp9WbDtQhnZqPvur65qFmdovGjrBCtviIaug/mLWGdp77Ogbsq+7ktWG0fAvX8kqam+4xQ66JduWhk6IHXFrwop01BuuscN9inVzQw871ifxmhr62JE+jd/MMMGO8wWSJoYudpQvcd9nvTc8Ygf5EsfHhlTvMhfu7ja3hu4JO8QXOd3+Tm8NA+wIXyZ4YIgdHwD1htSzsMCrNTxghwfAoc7QwI4OBKPGcIIdHAiTGsMzdnAgnGsMP7CDA+Gj2tDBjg0Ip9LQxg4NCLvS0MIODQir0vATOzQgPisNedxobm4114Yz7MjAmFUY8ujRFBgVhjRriDrWFYYpdmBgpBWGXB4WPx8X14Y8eqUF5wrDJXZgYCwrDLHjAmSshnwehz8eiFeGlMcrbkm0hjF0M4hTOGKtIfig2iRGm37jaw3Ba6UTpTLo72yIpzWcQzdT1LwMnG7EXGtoQjfzr6qXbKC/twGm1hB84PBSt4x/QX/zQ45aQ/A3/LIy23uf/kNrCH5zv6o9Gz2XgBa9GyoV9ZqOWsMZeLb8HD9QcY/Dy79mGIZ9pqPWMAJv5s5QGb3NB4yQDPub06kznIK3ojPM07GXDvkU0VCpoIcegM4QfuCpylDNwLvAd5TDTyiGSjldp6POEL7iXWOYN9dtZa+sepeGX+Ct1BoqlXaZjl8aQ/ia/gPDTtOxrOtjGubp2NlUT53hDryVx4Z5OnY0KrvTGML/ZJoY5vnfSTqWZQx8w27ScVCGeTr+Bm9bZwjf7W9smKcj9KTIcpFQaQheamtjqJQHm45lsW0whsBpMkhDZezh2h6mYf4GB5aOQzVUygcazBmuoVIwd5zhGnK/htzzkP29lPvzsIc+Da9+6R+NIf93C3k/bM/Q3vH512n419r410v517z5j1vwH3viP37IfwyY/zg+/7kY/OfT8J8TxX9eG/+5iSOYX8p/jjD/ed785+rzX2/Bf80M/3VP/Neu8V9/yH8NKf91wCMw5L8en/+eCvz3xeC/twn//Wn4PBCr9hjiv08U/72+RrBfG5fHRfWee/z3TeS/9yWTW03N/qVMeqZ1e9Dy30eYR6+mbi9o/vt5s9iT3a815FDJuDW6+Zv/2Qj8z7cgn4kPzygZwTkzIzgriPT4RaPznij33XSzsHSGZO82jc9do1pXbHF23gjOP1T8z7BUIziHVPE/S7aA+3nA/68k6zOdy4vJ+Vzuaxifra73dYvD65Nk7flpEFhZttub5ioMw2d/1Yv8syvT3O+yzAqC1PfsJCmacNs5wRk2wrgQTa+Jvv/fdQCdG6IjhvQRQ/qIIX3EkD5iSB8xpI8Y0kcM6SOG9BFD+oghfcSQPmJIHzGkjxjSRwzpI4b0EUP6iCF9/gKCNIdvAhrz/wAAAABJRU5ErkJggg=="
+                                    width="20px" height="20px"> Youtube</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">My Account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                        <p><i class="fas fa-home me-3"></i> Hyderabad, India</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            rentNgo@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>+91 9640601060</p>
+                        <p><i class="fas fa-print me-3"></i>+91 9704611167</p>
+                        <p><i class="fas fa-print me-3"></i>+91 7995514510</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://www.rentngo.com/">RENT N' GO.com</a>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous" >
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

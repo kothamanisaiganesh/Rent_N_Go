@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <style media="screen">
+        .top-right {
+        position: absolute;
+        bottom: 40px;
+        left: 400px;
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        font-family: 'decorative';
+        }
+
+        .top-right1 {
+        position: absolute;
+        bottom: 80px;
+        left: 500px;
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        font-family: 'decorative';
+        }
+
+        #vineel {
+        font-size: 15px;
+        }
+
+
+        </style>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light  sticky-top" style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="{% static "account/images/rentngo.jpeg" %}" width="43px" height="43px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'booknow' %}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="file:///Users/vineelneeli/Desktop/c3.html/hy.html"><span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="file:///Users/vineelneeli/Desktop/c3.html/login.html"><span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="file:///Users/vineelneeli/Desktop/c3.html/customer.html"><span
+                                class="sr-only"></span></a>
+                    </li>
+
+
+
+
+                </ul>
+
+                </form>
+            </div>
+        </nav>
+
+        <div>
+            <br>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="top-right" id="top-left">
+
+            <img src="{% static 'account/images/color.png' %}"width="650px" height="650px">
+
+        </div>
+        <div class="top-right1" id="top-left">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="uname">
+                        <h5>User Name</h5>
+                    </label>
+                    <input type="text" class="form-control" placeholder="User Name"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+                <div class="col-md-6">
+                    <label for="pasword">
+                        <h5>Email ID</h5>
+                    </label>
+
+                    <input type="email" class="form-control" placeholder="Email"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="card">
+                        <h5>Select Card</h5>
+                    </label>
+                    <select name="bank" id="bank" class="form-control" style="background-color:rgb(162, 221, 245)">
+                        <option value="first">Select Card</option>
+                        <option value="Visa ">Visa</option>
+                        <option value="Master">MasterCard</option>
+
+                        <option value="rupay">Rupay</option>
+
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="card number">
+                        <h5>Card Number</h5>
+                    </label>
+                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="name ">
+                        <h5>Name On Card</h5>
+                    </label>
+                    <input type="text" class="form-control" placeholder="John Doe"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="card number">
+                        <h5>Expiry Date</h5>
+                    </label>
+                    <input type="text" class="form-control" placeholder="mm/yy"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+                <div class="col-md-6">
+                    <label for="pasword">
+                        <h5>CVV</h5>
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="XXX" minlength="3" maxlength="3"
+                        style="background-color:rgb(162, 221, 245);">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-6">
+
+
+                        <h3 id="en5">
+                            <div id="vineel">Net Amout:</div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAQEAAAA+Pj50dHTCwsLi4uJhYWGlpaWWlpbV1dX4+Pjn5+fPz887OztUVFSFhYXt7e3JyckyMjKsrKy2trYtLS1PT09cXFx+fn42NjZqamrZ2dlISEjs7OwLCwsgICCnp6eQkJAmJiYXFxdvb2+dnZ2ysrJ7e3tr1RTxAAAD0UlEQVR4nO2d2XLiMBBFTYPZDCELEMISlgQm//+FA5maqZLVEGGEe7p1zzNU9SnbF0kt4SwDAAAAAAAAAAAAAAAAAAAAAAAAzNOaN+tk3qrdcEb1MqvdsEONOqEODGEIQxjCEIYwhCEMKzAKGEteqvhaRrUbDtqXGObdt9UFS3q5/H2fQe2GIbS3o3OS9CpdXCyKySvvaEfxeD8/so60kC4sIsWOc6SddF0xKVqcYi5dVlSWH54j0ZN0VXF59BWn0jVF5tlX7EnXFJn3dUmR6P/8Ia9O8VJWXEmXFB1P0Vaenvh0FWkjXVB0nkpxQxPpiqIzdBXN/WJkp99F9yIOpQuKz8a9iPXP3u+Oe58SFdIFxWfmXsRf0vXEp+0a1t8avD8j9zaVLoent29V57WUNT9/Y1//GP22Lndp6BYAutwwhCEMYQhDGMIQhjDkCOlyB49MAz5ff5d7mN/CszO7oN7P31C3mvPgGC6ly7kD7lKNsS7biaWGSf5NdB3DpnQ5d8ANmjfpcuJTuI+hvdaFe5M26F26nvg4vWCDDbYsdy/ho3Q98Sm1ZvrS9URn6wp+StcTnaLUIj1IFxSdlStor7nWK02c6j92d2fy0j1qbs/Qsjz33UtXFJm2N7k3NnHqe301U7tos2ziCa6lS4rLm98ZNTWcGZQ37Vkbkfb8jd40ly4qIvmaETSUo/kLt1PfzkM43rAHSqysXeSL8gr+X8GtdGm3U/QP5w92KZgzTbrn2R52X6O134DRdQUD9kTxdmqewRv6h6SjE1PdkOY6ZvVVDUnNUK2a4fHpVNPqrGRImpowFQyJVm3psq/gakOiqa4zTtcZHp+/uS6/6wyPfgt9E4lQw9Pg5mGr4xfQJcDwz9htNlY60fUN/YHptLVVMT7j8Qyp0+394zDO+9p7176htQOv3F1qawF7xq0tmTqj9eQv8J6OvCrNTZ4Ou0SoODx9dqyihgWKYLxeUkPTDDeIcsPTYN4UUzZvNA5Dz5JA3jBtM2t5k6eZN8bOoHt/rPOt+GFsfMMoIm+UkWjeSBzIuiPFnHsYN6byZpHq+MbU/88kmjcN5I02+LzR15m5APLGAinkzQPyxgDIGwukMJ9C3ljgkGreKNrA9zP8+MbQ+zuQN0bg82YsXVZMkDcW4PPm01Te7JE3BvBfNGMubwYJ5E3Tft6wL+/Sc1QohGTz5ku6rJgkkDcZmzdr7Zv7HRLImy6rqOCEdzgp5E35RXrfjqbeNFes2PEN8kYXaeQNg6m/4Rs0GaaWXoYMAAAAAAAAAAAAAAAAAAAAAAAAhPMbU0E8HB8+/kkAAAAASUVORK5CYII="
+                                width="20px" height="20px">299
+                        </h3>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="{% url 'success' %}">
+                        <div class="bttn" id="amaze6">
+                            <button class="btn btn-outline-info">
+
+
+                                Pay Now
+
+
+
+                            </button>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

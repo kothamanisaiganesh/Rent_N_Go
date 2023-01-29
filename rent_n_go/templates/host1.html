@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="{% static 'host1.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'account/host1.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light  " style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'account/images/host.jpeg' %}" width="150px" height="43px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="file:///Users/vineelneeli/Desktop/c3.html/main1.html"> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'host' %}">Home<span
+                                class="sr-only"></span></a>
+                    </li>
+
+
+
+
+                </ul>
+
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="container">
+                <div class="container">
+
+                    <div class="container">
+                        <div class="container">
+
+
+
+
+
+                            <br>
+                            <br>
+                            <div class="container" style="background-color:powderblue;">
+                                <br>
+                                <br>
+
+
+                                <div class="container">
+                                    <div class="container">
+                                        <div class="container">
+                                            <div class="container">
+
+
+                                                <form action="{% url 'added' %}">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-4 ">
+                                                            <label for="subject">
+                                                                <h5>Select Vehicle</h5>
+                                                            </label>
+                                                            <select name="subject" id="subject" class="form-control"
+                                                                style="background-color:rgb(216,229,235)"  required >
+                                                                <option value="" selected="selected">Select Vehicle
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-4 ">
+
+
+                                                            <label for="topic">
+                                                                <h5>Select Brand</h5>
+                                                            </label>
+                                                            <select name="topic" id="topic" class="form-control"
+                                                                style="background-color:rgb(162, 221, 245)" required>
+                                                                <option value="" selected="selected">Select Brand
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-4 ">
+
+
+                                                            <label for="topic">
+                                                                <h5>Select Model</h5>
+                                                            </label>
+                                                            <select name="chapter" id="chapter" class="form-control"
+                                                                style="background-color:rgb(216,229,235)" required>
+                                                                <option value="" selected="selected">Select Model
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 ">
+                                                            <label for="email">
+                                                                <h5>Year Of Purchase</h5>
+                                                            </label>
+                                                            <input type="number" class="form-control" placeholder="yyyy"
+                                                                id="email" min="2000" max="2023" required
+                                                                style="background-color:rgb(162, 221, 245)" required>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="pasword">
+                                                                <h5>kms Driven</h5>
+                                                            </label>
+                                                            <input type="number" class="form-control"
+                                                                placeholder="1000kms" id="hover"
+                                                                style="background-color:rgb(216,229,235);" required>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 ">
+                                                            <label for="email">
+                                                                <h5>RC Number</h5>
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="AP09CP0070" id="hover" maxlength="10"
+                                                                minlength="10"
+                                                                style="background-color:rgb(216,229,235);" required>
+
+
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="pasword">
+                                                                <h5>Number Plate</h5>
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="HR26DQ5551" maxlength="10" minlength="10"
+                                                                id="hover" style="background-color:rgb(162, 221, 245)" required>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 ">
+                                                            <label for="location">
+                                                                <h5> Select Location</h5>
+                                                            </label>
+                                                            <select name="location" id="location" class="form-control "
+                                                                style="background-color:rgb(162, 221, 245)" required>
+                                                                <option value=" ">Location</option>
+                                                                <option value="ameerpet">Ameerpet</option>
+                                                                <option value="miyapur">Miyapur</option>
+                                                                <option value="kokapet">Kokapet</option>
+                                                                <option value="gachibowli">Gachibowli</option>
+                                                                <option value="malakpet">Malakpet</option>
+                                                                <option value="saroornagar">Saroornagar</option>
+                                                                <option value="banajarahills">Banjara Hills</option>
+                                                                <option value="jubileehills">Jubilee Hills</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group col-md-6">
+                                                            <label for="pasword">
+                                                                <h5>Phone Number</h5>
+                                                            </label>
+                                                            <input type="number" class="form-control"
+                                                                placeholder="9809880980" id="hover" maxlength="10"
+                                                                minlength="10"
+                                                                style="background-color:rgb(216,229,235);" required>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <br>
+
+
+
+                                                      <button class="btn btn-outline-secondary"
+                                                          class="vertical-center">Add
+                                                          Vehicle</button>
+
+
+                                            </div>
+                                            </form>
+                                            <br>
+
+
+
+</body>
+
+</html>
