@@ -1,4 +1,0 @@
-function fun()
-{
-   alert ("Hi");
-}
